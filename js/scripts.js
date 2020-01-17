@@ -7,6 +7,9 @@ $(document).ready(function() {
   questions.forEach(function(questions) {
     $("#submit" + questions).click(function() {
       var surveyResult = $("input:radio[name=surveyQuestion" + questions + "]:checked").val();
+      if (!surveyResult) {
+        alert("please select an answer")
+      } else {
       if (surveyResult === "1")
         language1Counter++;
         else if (surveyResult === "2")
@@ -28,6 +31,7 @@ $(document).ready(function() {
         else 
           $("#reactResult").show();
       }
+    }
     })
   });
 });
