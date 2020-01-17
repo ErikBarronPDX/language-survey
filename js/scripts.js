@@ -7,34 +7,25 @@ $(document).ready(function() {
   questions.forEach(function(questions) {
     $("#submit" + questions).click(function() {
       var surveyResult = $("input:radio[name=surveyQuestion" + questions + "]:checked").val();
-
-      if (surveyResult === "1"){
+      if (surveyResult === "1")
         language1Counter++;
-      } else if (surveyResult === "2"){
+        else if (surveyResult === "2")
         language2Counter++;
-      } else if (surveyResult === "3") {
+        else if (surveyResult === "3")
         language3Counter++;
-      } else {
+        else
         language4Counter++;
-      }
       $("#question" + questions).hide();
       $("#question" + (questions + 1)).fadeIn();
-      $("#spanOne").text(language1Counter);
-      $("#spanTwo").text(language2Counter);
-      $("#spanThree").text(language3Counter);
-      $("#spanFour").text(language4Counter);
-
       if (questions === 5) {
-
-        if (language1Counter >= language2Counter && language1Counter >= language3Counter && language1Counter >= language4Counter){
+        if (language1Counter >= language2Counter && language1Counter >= language3Counter && language1Counter >= language4Counter)
           $("#htmlResult").show();
-        } else if (language2Counter >= language1Counter && language2Counter >= language3Counter && language2Counter >= language4Counter) {
+        else if (language2Counter >= language1Counter && language2Counter >= language3Counter && language2Counter >= language4Counter)
           $("#javaScriptResult").show();
-        } else if (language3Counter >= language1Counter && language3Counter >= language2Counter && language3Counter >= language4Counter){
+        else if (language3Counter >= language1Counter && language3Counter >= language2Counter && language3Counter >= language4Counter)
           $("#pythonResult").show();
-        } else {
+        else 
           $("#reactResult").show();
-        }
       }
     })
   });
