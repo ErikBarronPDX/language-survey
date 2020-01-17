@@ -12,6 +12,11 @@ body, html { height: 100%; }
   background-color: green;
 }
 
-#questionText, #questionRadio {
+#questionText, #questionRadio, #submit {
   font-size: 25px;;
+}
+
+#submit {
+  float: right;
+  margin: 10px;
 }
