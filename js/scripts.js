@@ -18,6 +18,7 @@ $(document).ready(function() {
       $("#question" + questions).hide();
       $("#question" + (questions + 1)).fadeIn();
       if (questions === 5) {
+        $("#displayResults").show();
         if (language1Counter >= language2Counter && language1Counter >= language3Counter && language1Counter >= language4Counter)
           $("#htmlResult").show();
         else if (language2Counter >= language1Counter && language2Counter >= language3Counter && language2Counter >= language4Counter)

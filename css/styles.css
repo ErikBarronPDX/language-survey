@@ -10,10 +10,12 @@ body, html { height: 100%; }
 
 #questionRadio {
   background-color: green;
+  min-height: 200px;
 }
 
-#questionText, #questionRadio, #submit {
+#questionText {
   font-size: 25px;
+  min-height: 200px;
 }
 
 #submitOne, #submitTwo, #submitThree, #submitFour, #submitFive {
@@ -23,6 +25,18 @@ body, html { height: 100%; }
   display: none;
 }
 
+#question1, #question2, #question3, #question4, #question5 {
+  border-style: solid;
+}
+
 #htmlResult, #javaScriptResult, #pythonResult, #reactResult {
   display: none;
+}
+
+#displayResults{
+  display: none;
+  background-color: green;
+  border-style: solid;
+  border-color: blue;
+  padding: 25px;
 }
