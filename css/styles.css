@@ -1,4 +1,17 @@
+body, html { height: 100%; }
+
 .jumbotron {
   text-align: center;
 }
   
+#questionText {
+  background-color: aqua;
+}
+
+#questionRadio {
+  background-color: green;
+}
+
+#questionText, #questionRadio {
+  font-size: 25px;;
+}
