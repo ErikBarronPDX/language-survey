@@ -19,6 +19,6 @@ body, html { height: 100%; }
 #submitOne, #submitTwo, #submitThree, #submitFour, #submitFive {
   float: right;
 }
-#questionTwo, #questionThree, #questionFour, #questionFive {
+#question2, #question3, #question4, #question5 {
   display: none;
 }
