@@ -1,9 +1,9 @@
 # Language Survey
-#### Which programming language should you learn?
+#### Which programming language should you learn? A survey to determine the answer.
 #### By: Erik Barron
 --- 
 ### Description
-This project was assigned as an independant project at epicodus. The purpose of this project is to create a website which asks a user a series of questions to determine which programming language would be a good fit for them. 
+This project was assigned as an independant project at epicodus. The purpose of this project is to create a website which asks a user a series of questions to determine which programming language would be a good fit for them.
 
 ### Setup / Installation Requirements:
 
