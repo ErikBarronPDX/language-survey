@@ -15,33 +15,32 @@
     <div class="jumbotron"><h1>Programming Language Survey</h1>
     </div>
 
-
     <!--Survey UI Starts Here:-->
     <div class="row" id="question1">
       <div class="col-md-6" id="questionText">
         <h4>Question: 1</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id interdum velit. Orci porta non pulvinar neque laoreet suspendisse interdum.</p>
+        <p>How would you describe your comfort level with programming?</p>
       </div>
       <div class="col-md-6" id="questionRadio">
         <h4>Select One:</h4>
         <div class="radio">
           <label>
-            <input type="radio" name="surveyQuestion1" value="1"> Answer 1
+            <input type="radio" name="surveyQuestion1" value="1"> Completely Unfamiliar
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="surveyQuestion1" value="2"> Answer 2
+            <input type="radio" name="surveyQuestion1" value="2"> Somewhat Familiar
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="surveyQuestion1" value="3"> Answer 3
+            <input type="radio" name="surveyQuestion1" value="3"> Very Familiar
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="surveyQuestion1" value="4"> Answer 4
+            <input type="radio" name="surveyQuestion1" value="4"> Total Expert
           </label>
         </div>
         <button type="submit" class="btn btn-info" id="submit1">Submit</button>
@@ -51,28 +50,28 @@
     <div class="row" id="question2">
       <div class="col-md-6" id="questionText">
         <h4>Question: 2</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id interdum velit. Orci porta non pulvinar neque laoreet suspendisse interdum.</p>
+        <p>Are you more interested in visual "front-end" logic including style and graphics or do you prefer data-driven "back-end" logic?</p>
       </div>
       <div class="col-md-6" id="questionRadio">
         <h4>Select One:</h4>
         <div class="radio">
           <label>
-            <input type="radio" name="surveyQuestion2" value="1"> Answer 1
+            <input type="radio" name="surveyQuestion2" value="1"> Strongly prefer front-end
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="surveyQuestion2" value="2"> Answer 2
+            <input type="radio" name="surveyQuestion2" value="2"> Slightly prefer front-end
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="surveyQuestion2" value="3"> Answer 3
+            <input type="radio" name="surveyQuestion2" value="3"> Slightly prefer back-end
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="surveyQuestion2" value="4"> Answer 4
+            <input type="radio" name="surveyQuestion2" value="4"> Strongly prefer back-end
           </label>
         </div>
         <button type="submit" class="btn btn-info" id="submit2">Submit</button>
@@ -177,10 +176,27 @@
 
     <!--Display Logic Starts Here-->
     <div id="outputDisplay">
-      <p>Language One: <span id="spanOne"></span></p>
-      <p>Language Two: <span id="spanTwo"></span></p>
-      <p>Language Three: <span id="spanThree"></span></p>
-      <p>Language Four: <span id="spanFour"></span></p>
+      <p>HTML & CSS: <span id="spanOne"></span></p>
+      <p>JavaScript: <span id="spanTwo"></span></p>
+      <p>Python: <span id="spanThree"></span></p>
+      <p>React: <span id="spanFour"></span></p>
+    </div>
+
+    <div id="htmlResult">
+      <h4>You should learn HTML and CSS</h4>
+      <p>These languages are very visual and straigh-forward. It can be easier to toubleshoot and debug this language over other options. These languages are the back-bone of internet content.</p>
+    </div>
+    <div id="javaScriptResult">
+      <h4>You should learn JavaScript</h4>
+      <p>JavaScript is versatile and highly compatible with several devices. You could code web-pages as well as phone apps using Javascript.</p>
+    </div>
+    <div id="pythonResult">
+      <h4>You should learn Python</h4>
+      <p>This language is currently <em>hot</em>. It is in high demand and many companies are hiring developers able to use Python. It also has a straightforward syntax making it easier to learn.</p>
+    </div>
+    <div id="reactResult">
+      <h4>You should learn React</h4>
+      <p>React is an extension of JavaScript. It offers more features than are native to JavaScript alone. So the abilit to build more robust applications exists with this language.</p>
     </div>
 
   </div>
