@@ -7,12 +7,10 @@ This project was assigned as an independant project at epicodus. The purpose of 
 
 ### Setup / Installation Requirements:
 
-The webpage can be visited at: [Click Here]()
-
-The reposity can be cloned or downloaded [Click Here](https://github.com/todayisagrnday21/language-survey.git)
+[Click Here]() to visit the live gh-pages.
 
 To install locally, run the following command in your git bash console:
-> `https://github.com/todayisagrnday21/language-survey.git`
+> ` git clone https://github.com/todayisagrnday21/language-survey.git`
 
 After copying the repository, open index.html with your preferred web browser.
 
