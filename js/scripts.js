@@ -5,6 +5,7 @@ var language3Counter = 0;
 var language4Counter = 0;
 
 $(document).ready(function() {
+  $("#questionName").show();
   $("#questionName").submit(function(event) {
     var userName = $("#userName").val();
     if (!userName) {
