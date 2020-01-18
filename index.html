@@ -14,13 +14,27 @@
   <div class="container">
     <div class="jumbotron"><h1>Programming Language Survey</h1>
     </div>
-    <!--Survey UI Starts-->
+              <!--Survey UI HERE-->
+    <div class="row" id="questionName">
+      <div class="col-md-12">
+        <form id="nameForm"> <!--Unsure if id is needed-->
+          <p>Welcome to the survey! Please enter your name below and click the "Submit" button on the bottom right-hand side.</p>
+          <div class="form-group">
+            <label for="userName">Your Name:</label>
+            <input id="userName" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!--Survey Questions Start-->
     <div class="row" id="question1">
-      <div class="col-md-9" id="questionText">
+      <div class="col-md-9 questionText">
         <h4>Question: 1</h4>
         <p>How would you describe your comfort level with programming?</p>
       </div>
-      <div class="col-md-3" id="questionRadio">
+      <div class="col-md-3 questionRadio">
         <h4>Select One:</h4>
         <div class="radio">
           <label>
@@ -42,15 +56,15 @@
             <input type="radio" name="surveyQuestion1" value="4"> Total Expert
           </label>
         </div>
-        <button type="submit" class="btn btn-info" id="submit1">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit1">Submit</button>
       </div>
     </div>
     <div class="row" id="question2">
-      <div class="col-md-9" id="questionText">
+      <div class="col-md-9 questionText">
         <h4>Question: 2</h4>
         <p>Are you more interested in visual "front-end" logic including style and graphics or do you prefer data-driven "back-end" logic?</p>
       </div>
-      <div class="col-md-3" id="questionRadio">
+      <div class="col-md-3 questionRadio">
         <h4>Select One:</h4>
         <div class="radio">
           <label>
@@ -72,15 +86,15 @@
             <input type="radio" name="surveyQuestion2" value="4"> Strongly prefer back-end
           </label>
         </div>
-        <button type="submit" class="btn btn-info" id="submit2">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit2">Submit</button>
       </div>
     </div>
     <div class="row" id="question3">
-      <div class="col-md-9" id="questionText">
+      <div class="col-md-9 questionText">
         <h4>Question: 3</h4>
         <p>How much time do you have to dedicate to learning how to program?</p>
       </div>
-      <div class="col-md-3" id="questionRadio">
+      <div class="col-md-3 questionRadio">
         <h4>Select One:</h4>
         <div class="radio">
           <label>
@@ -102,15 +116,15 @@
             <input type="radio" name="surveyQuestion3" value="4"> Over 30 hours a week
           </label>
         </div>
-        <button type="submit" class="btn btn-info" id="submit3">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit3">Submit</button>
       </div>
     </div>
     <div class="row" id="question4">
-      <div class="col-md-9" id="questionText">
+      <div class="col-md-9 questionText">
         <h4>Question: 4</h4>
         <p>How likely are you to say: "Zippity-Doo-Dah!"?</p>
       </div>
-      <div class="col-md-3" id="questionRadio">
+      <div class="col-md-3 questionRadio">
         <h4>Select One:</h4>
         <div class="radio">
           <label>
@@ -132,15 +146,15 @@
             <input type="radio" name="surveyQuestion4" value="4"> Very Likely
           </label>
         </div>
-        <button type="submit" class="btn btn-info" id="submit4">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit4">Submit</button>
       </div>
     </div>
     <div class="row" id="question5">
-      <div class="col-md-9" id="questionText">
+      <div class="col-md-9 questionText">
         <h4>Question: 5</h4>
         <p>Are you more interested in Web-Development or Software-Development?</p>
       </div>
-      <div class="col-md-3" id="questionRadio">
+      <div class="col-md-3 questionRadio">
         <h4>Select One:</h4>
         <div class="radio">
           <label>
@@ -162,30 +176,33 @@
             <input type="radio" name="surveyQuestion5" value="4"> Mostly Software
           </label>
         </div>
-        <button type="submit" class="btn btn-info" id="submit5">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit5">Submit</button>
       </div>
     </div>
     <!--Survey UI Logic Ends-->
     <!--Display Logic Starts-->
     <div class="row" id="displayResults">
       <div id="htmlResult">
-        <h4>You should learn HTML and CSS</h4>
+        <h4><span class="userName"></span>, you should learn HTML and CSS</h4>
+        <img src="img/htmlcss.png" alt="The logo for HTML and CSS">
         <p>These languages are very visual and straight-forward. It can be easier to toubleshoot and debug this language over other options. These languages are the back-bone of internet content.</p>
       </div>
       <div id="javaScriptResult">
-        <h4>You should learn JavaScript</h4>
+        <h4><span class="userName"></span>, you should learn JavaScript</h4>
+        <img src="img/javascript.png" alt="The logo for JavaScript">
         <p>JavaScript is versatile and highly compatible with several devices. You could code web-pages as well as phone apps using Javascript.</p>
       </div>
       <div id="pythonResult">
-        <h4>You should learn Python</h4>
+        <h4><span class="userName"></span>, you should learn Python</h4>
+        <img src="img/python.png" alt="The logo for Python">
         <p>This language is currently <em>hot</em>. It is in high demand and many companies are hiring developers able to use Python. It also has a straightforward syntax making it easier to learn.</p>
       </div>
       <div id="reactResult">
-        <h4>You should learn React</h4>
+        <h4><span class="userName"></span>, you should learn React</h4>
+        <img src="img/react.png" alt="The logo for React">
         <p>React is an extension of JavaScript. It offers more features than are native to JavaScript alone. So the ability to build more robust applications exists with this language.</p>
       </div>
     </div>
-    <!--Display Logic Ends-->
   </div>
 </body>
 </html>
