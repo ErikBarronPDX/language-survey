@@ -7,8 +7,6 @@ This project was assigned as an independant project at epicodus. The purpose of 
 
 ### Setup / Installation Requirements:
 
-[Click Here]() to visit the live gh-pages.
-
 To install locally, run the following command in your git bash console:
 > ` git clone https://github.com/todayisagrnday21/language-survey.git`
 
@@ -21,6 +19,14 @@ After copying the repository, open index.html with your preferred web browser.
 * CSS: Bootstrap
 * Java Script
 * jQuery 1.9.1
+
+##### Features and Elements
+* Form Submission
+* Radio Selection
+* jQuery show & hide functions
+* Branching
+* For Loop
+* Indexing variables based on user response
 
 ### License
 
